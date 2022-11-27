@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+  {% block content %} {% block styles %} 
+  {% load static %}
+      <link rel="stylesheet" href="{% static 'css/listas/listas.css' %}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  {% endblock %}
+
+  <div class="col">
+    <div class="table-wrapper" id="round">
+      <div class="table-title" id="round-top">
+        <div class="row mt-3">
+          <div class="col-sm-12">
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-7">
+            <div class="col-md-10 col-xs-10 col-sm-10">
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1"></div>
+            </div>
+         </div>
+        </div> 
+        <p> </p>
+        <br>
+        <ul>
+          <li><strong>Contador de Imagens Clusterizadas:</strong> {{ num_imagens }}</li>
+        </ul>
+    </div> 
+</div>  
+{% endblock %}
